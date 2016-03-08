@@ -36,4 +36,4 @@ Dependencies
   * `jsdom` : for headless browser testing
   * `react-addons-test-utils` : for React related tests
 * for linting
-  * `tslint` : the linter, uses `.eslinrc` and `.eslintignore`
+  * `tslint` : the linter, uses `tslint.json`
