@@ -6,7 +6,7 @@ import { autoBind } from '../utils';
 export class Timer extends React.Component<TimerProps, TimerState> {
   private interval: NodeJS.Timer;
 
-  constructor(props: TimerProps, context) {
+  constructor(props: TimerProps, context: any) {
     super(props, context);
     autoBind(this);
     this.state = {
@@ -14,21 +14,21 @@ export class Timer extends React.Component<TimerProps, TimerState> {
     };
   }
 
-  private tick() {
+  private tick(): void {
     this.setState({
       ticksElapsed: this.state.ticksElapsed + 1
     });
   }
 
-  public componentDidMount() {
+  public componentDidMount(): void {
     this.interval = setInterval(this.tick, this.props.tickInterval);
   }
 
-  public componentWillUnmount() {
+  public componentWillUnmount(): void {
     clearInterval(this.interval);
   }
 
-  public render() {
+  public render(): JSX.Element {
     return (
       <div>
         <div>Ticks Elapsed: </div>
