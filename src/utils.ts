@@ -6,10 +6,13 @@ export function isFunction(x): boolean {
   return isObject(x) && Object.prototype.toString.call(x) === '[object Function]'
 }
 
-export function autoBind(instance: any): void {
+export function autoBind(instance: any, whenDone?: (item: any) => void): void {
   for (const key in instance) {
     if (isFunction(instance[key])) {
       instance[key] = instance[key].bind(instance)
     }
+  }
+  if (whenDone) {
+    whenDone(instance)
   }
 }

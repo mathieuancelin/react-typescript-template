@@ -55,7 +55,7 @@
     "no-trailing-whitespace": true,
     "no-unreachable": true,
     "no-unused-expression": true,
-    "no-unused-variable": true,
+    "no-unused-variable": 1,
     "no-use-before-declare": true,
     "no-var-keyword": true,
     "no-var-requires": false,
@@ -68,7 +68,7 @@
       "check-whitespace"
     ],
     "quotemark": [
-      true,
+      false,
       "single",
       "avoid-escape"
     ],
