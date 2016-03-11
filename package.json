@@ -14,13 +14,13 @@
     "typings-install": "typings install",
     "test:covtext": "rm -rf ./coverage && NODE_ENV=test isparta cover --report text $(npm bin)/_mocha -- lib/tests/index.js",
     "test:cov": "rm -rf ./coverage && NODE_ENV=test isparta cover --report html $(npm bin)/_mocha -- lib/tests/index.js"
-
   },
   "author": "Mathieu ANCELIN",
   "license": "MIT",
   "dependencies": {
-    "babel-polyfill": "^6.6.1",
+    "babel-polyfill": "^6.7.2",
     "es5-shim": "^4.5.7",
+    "isparta": "^4.0.0",
     "react": "^0.14.7",
     "react-dom": "^0.14.7"
   },
@@ -32,7 +32,7 @@
     "ts-loader": "^0.8.1",
     "tslint": "^3.5.0",
     "typescript": "^1.8.7",
-    "typings": "^0.7.5",
+    "typings": "^0.7.7",
     "webpack": "^1.12.14",
     "webpack-dev-server": "^1.14.1"
   }

@@ -5,10 +5,10 @@ import { ClickerProps } from '../models/props'
 import { ClickerState } from '../models/states'
 
 export class Clicker extends React.Component<ClickerProps, ClickerState> {
-  
-  private static initialState(): ClickerState {
+
+  private static initialState(from: number): ClickerState {
     return {
-      count: 0,
+      count: from,
       label: 'clicked'
     }
   }
@@ -16,7 +16,7 @@ export class Clicker extends React.Component<ClickerProps, ClickerState> {
   constructor(props: ClickerProps, context: any) {
     super(props, context)
     autoBind(this)
-    this.state = Clicker.initialState()
+    this.state = Clicker.initialState(props.from)
   }
 
   public increment(): void {
