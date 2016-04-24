@@ -8,7 +8,7 @@
     "lint": "tslint 'src/**/*.ts' && tslint 'src/**/*.tsx'",
     "test": "NODE_ENV=test mocha lib/tests/index.js",
     "start": "NODE_ENV=dev webpack-dev-server -d --colors --hot --inline --progress --port 8080",
-    "bundle": "NODE_ENV=production webpack -p --colors --progress",
+    "bundle": "NODE_ENV=production webpack --colors --progress",
     "lib": "rm -rf ./lib && tsc",
     "build": "npm run lib && npm run test && npm run test:covtext && npm run lint && npm run bundle",
     "typings-install": "typings install",
@@ -26,13 +26,14 @@
   },
   "devDependencies": {
     "chai": "^3.5.0",
+    "eslint-plugin-import": "^1.5.0",
     "jsdom": "^8.4.0",
     "mocha": "^2.4.5",
     "react-addons-test-utils": "^15.0.1",
     "ts-loader": "^0.8.2",
-    "tslint": "^3.7.4",
+    "tslint": "^3.8.0",
     "typescript": "^1.8.10",
-    "typings": "^0.7.12",
+    "typings": "^0.8.1",
     "webpack": "^1.13.0",
     "webpack-dev-server": "^1.14.1"
   }
