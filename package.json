@@ -21,15 +21,15 @@
     "babel-polyfill": "^6.7.4",
     "es5-shim": "^4.5.8",
     "isparta": "^4.0.0",
-    "react": "^15.0.1",
-    "react-dom": "^15.0.1"
+    "react": "^15.0.2",
+    "react-dom": "^15.0.2"
   },
   "devDependencies": {
     "chai": "^3.5.0",
-    "eslint-plugin-import": "^1.6.0",
-    "jsdom": "^8.4.0",
+    "eslint-plugin-import": "^1.6.1",
+    "jsdom": "^8.4.1",
     "mocha": "^2.4.5",
-    "react-addons-test-utils": "^15.0.1",
+    "react-addons-test-utils": "^15.0.2",
     "ts-loader": "^0.8.2",
     "tslint": "^3.8.1",
     "typescript": "^1.8.10",
