@@ -26,14 +26,14 @@
   },
   "devDependencies": {
     "chai": "^3.5.0",
-    "eslint-plugin-import": "^1.7.0",
-    "jsdom": "^9.0.0",
+    "eslint-plugin-import": "^1.8.0",
+    "jsdom": "^9.1.0",
     "mocha": "^2.4.5",
     "react-addons-test-utils": "^15.0.2",
     "ts-loader": "^0.8.2",
-    "tslint": "^3.9.0",
+    "tslint": "^3.10.2",
     "typescript": "^1.8.10",
-    "typings": "^0.8.1",
+    "typings": "^1.0.1",
     "webpack": "^1.13.0",
     "webpack-dev-server": "^1.14.1"
   }
