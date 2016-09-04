@@ -27,7 +27,7 @@
   "devDependencies": {
     "chai": "^3.5.0",
     "eslint-plugin-import": "^1.14.0",
-    "jsdom": "^9.4.5",
+    "jsdom": "^9.5.0",
     "mocha": "^3.0.2",
     "react-addons-test-utils": "^15.3.1",
     "ts-loader": "^0.8.2",
